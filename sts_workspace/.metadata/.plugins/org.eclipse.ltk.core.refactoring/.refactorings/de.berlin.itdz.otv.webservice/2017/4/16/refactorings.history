@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;hello.web.staat.StaatSachgebietService&apos; to &apos;StaatSachgebieteService&apos;&#x0D;&#x0A;- Original project: &apos;de.berlin.itdz.otv.webservice&apos;&#x0D;&#x0A;- Original element: &apos;hello.web.staat.StaatSachgebietService&apos;&#x0D;&#x0A;- Renamed element: &apos;hello.web.staat.StaatSachgebieteService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StaatSachgebietService&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;hello.web.staat{StaatSachgebietService.java[StaatSachgebietService" matchStrategy="1" name="StaatSachgebieteService" qualified="false" references="true" similarDeclarations="false" stamp="1492421741944" textual="false" version="1.0"/>
+</session>

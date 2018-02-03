@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;OpenAndSaveRoundTripTest.java&apos; to &apos;org.docx4j.samples.OpenAndSaveRoundTripTest.java&apos;&#x0D;&#x0A;- Original project: &apos;docx4j-git&apos;&#x0D;&#x0A;- Destination element: &apos;org.docx4j.samples.OpenAndSaveRoundTripTest.java&apos;&#x0D;&#x0A;- Original element: &apos;org.docx4j.samples.OpenAndSaveRoundTripTest.java&apos;" description="Copy compilation unit" destination="/src\/samples\/docx4j&lt;org.docx4j.samples{OpenAndSaveRoundTripTest.java" element1="/src\/samples\/docx4j&lt;org.docx4j.samples{OpenAndSaveRoundTripTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1494162130054" units="1" version="1.0"/>
+</session>

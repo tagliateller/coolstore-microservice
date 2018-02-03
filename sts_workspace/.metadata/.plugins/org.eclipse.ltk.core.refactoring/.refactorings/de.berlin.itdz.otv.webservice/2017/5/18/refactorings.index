@@ -1,0 +1,66 @@
+1493652419777	Copy compilation units
+1493652421699	Copy compilation units
+1493652423418	Copy compilation units
+1493652439800	Rename type 'MenuItemControllerApplicationTests'
+1493652450589	Rename type 'MenuItemControllerHtmlUnitTests'
+1493652463642	Rename type 'MenuItemControllerSeleniumTests'
+1493652477115	Rename type 'MenuItemControllerTests'
+1493652484820	Rename type 'MenuItemServiceTests'
+1493652496926	Rename type 'MenuItemControllerApplicationTests'
+1493652511039	Rename type 'MenuItemControllerHtmlUnitTests'
+1493652520775	Rename type 'MenuItemControllerSeleniumTests'
+1493652532512	Rename type 'MenuItemControllerTests'
+1493652541281	Rename type 'MenuItemServiceTests'
+1493652556735	Rename type 'MenuItemControllerApplicationTests'
+1493652565893	Rename type 'MenuItemControllerHtmlUnitTests'
+1493652574380	Rename type 'MenuItemControllerSeleniumTests'
+1493652582733	Rename type 'MenuItemControllerTests'
+1493652590255	Rename type 'MenuItemServiceTests'
+1493717804712	Delete element
+1493717833408	Move compilation unit
+1493720599600	Rename type 'StaatSachgebieteService'
+1493720614578	Rename type 'StaatSachgebieteController'
+1493724072322	Rename type 'AnliegenService'
+1493724109077	Extract interface 'AnliegenService'
+1493724194270	Rename type 'InfoTextService'
+1493724206441	Rename type 'KundenfilterVersionService'
+1493724220243	Rename type 'MenuItemService'
+1493724235888	Rename type 'SachgebietService'
+1493724254659	Rename type 'StaatService'
+1493724278584	Extract interface 'StaatenService'
+1493724305982	Extract interface 'SachgebietService'
+1493724324743	Extract interface 'MenuItemService'
+1493724349805	Extract interface 'KundenfilterVersionService'
+1493724371485	Extract interface 'InfoTextService'
+1493724389655	Delete element
+1493724394532	Delete element
+1493724399209	Delete element
+1493724407946	Delete elements
+1493724604648	Delete element
+1493724616612	Delete element
+1493724735709	Rename type 'StaatenService'
+1493726827817	Encapsulate field 'id'
+1493727425533	Copy compilation unit
+1493727442100	Rename type 'MenuItemController'
+1493731542205	Delete elements
+1493731572527	Delete element
+1493731575482	Delete element
+1493731577954	Delete element
+1493731582350	Delete element
+1493731586838	Delete element
+1493731590213	Delete element
+1493731599268	Rename type 'InfoTextServiceImpl'
+1493731610938	Rename type 'AnliegenServiceImpl'
+1493731632170	Rename type 'KundenfilterVersionServiceImpl'
+1493731642230	Rename type 'MenuItemServiceImpl'
+1493731655653	Rename type 'SachgebietServiceImpl'
+1493731664859	Rename type 'StaatServiceImpl'
+1493732713212	Copy compilation unit
+1493732735196	Rename type 'MenuItemController'
+1493733171864	Copy compilation unit
+1493733181670	Rename type 'MenuItemController'
+1493734402559	Encapsulate field 'id'
+1493740033830	Rename type 'KundenfilterversionControllerSeleniumTests'
+1493740042037	Rename type 'KundenfilterversionControllerHtmlUnitTests'
+1493740050361	Rename type 'KundenfilterversionControllerApplicationTests'
+1493747274992	Delete element

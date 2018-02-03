@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1489596192351_1" label="shardis" name="shardis">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.shardis.shardis" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.shardis.shardis-auth" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.shardis.shardis-common" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.shardis.shardis-api" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.shardis.shardis-gateway" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.shardis.shardis-config" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.shardis.shardis-discovery" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.shardis.shardis-admin" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1492099242380_2" label="otv-project" name="otv-project">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/de.berlin.itdz.otv.webservice" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/de.berlin.itdz.otv-project" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/de.berlin.itdz.otv.library" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/de.berlin.itdz.otv.application" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1489596023936_0" label="Window Working Set" name="Aggregate for window 1489596023936"/>
+</workingSetManager>

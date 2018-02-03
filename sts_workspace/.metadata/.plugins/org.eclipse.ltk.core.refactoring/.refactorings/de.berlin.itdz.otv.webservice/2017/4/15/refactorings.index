@@ -1,0 +1,39 @@
+1492100027595	Copy compilation unit
+1492100037993	Copy compilation unit
+1492100052509	Copy compilation unit
+1492100063757	Rename type 'MenuItemEntityTest'
+1492100070322	Rename type 'StaatEntityTest'
+1492100605285	Move compilation unit
+1492100748301	Encapsulate field 'nr'
+1492100751629	Encapsulate field 'bez'
+1492100859148	Encapsulate field 'lang'
+1492100872027	Encapsulate field 'bez'
+1492101091436	Encapsulate field 'bez'
+1492101278276	Move compilation unit
+1492254611821	Encapsulate field 'language'
+1492254615501	Encapsulate field 'text'
+1492254934978	Encapsulate field 'map'
+1492254954763	Encapsulate field 'id'
+1492255361354	Delete element
+1492255370873	Move compilation unit
+1492255375707	Move compilation unit
+1492255380810	Move compilation unit
+1492255384454	Move compilation unit
+1492255439952	Delete element
+1492255451053	Encapsulate field 'bez'
+1492257537391	Delete element
+1492259181805	Move compilation units
+1492259501991	Rename type 'UserVehicleServiceTests'
+1492260092825	Copy compilation units
+1492260094717	Copy compilation units
+1492260095526	Copy compilation units
+1492260096486	Copy compilation units
+1492260101040	Delete elements
+1492260140199	Rename type 'UserVehicleService'
+1492260159456	Rename type 'UserVehicleController'
+1492260162522	Delete element
+1492260208399	Rename type 'StaatServiceTests'
+1492260220954	Rename type 'StaatControllerTests'
+1492260232499	Rename compilation unit 'StaatControllerSeleniumTests.java'
+1492260241219	Rename compilation unit 'StaatControllerHtmlUnitTests.java'
+1492260252807	Rename compilation unit 'StaatControllerApplicationTests.java'

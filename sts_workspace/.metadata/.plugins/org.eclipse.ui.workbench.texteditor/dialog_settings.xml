@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="575" key="DIALOG_X_ORIGIN"/>
+		<item value="325" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="/" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="\"/>
+			<item value="&quot;"/>
+			<item value="&gt;"/>
+			<item value="MenuItem"/>
+			<item value="/staaten"/>
+			<item value="sachgebietService"/>
+			<item value="Sachgebiete"/>
+			<item value="&lt;Sachgebiet&gt;"/>
+		</list>
+		<list key="replacehistory">
+			<item value="/"/>
+			<item value="\&quot;"/>
+			<item value="KundenfilterVersion"/>
+			<item value="InfoText"/>
+			<item value="/sachgebiete"/>
+			<item value="staatService"/>
+			<item value="Staat"/>
+			<item value="&lt;Staat&gt;"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="385" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="523" key="DIALOG_HEIGHT"/>
+		<item value="225" key="DIALOG_X_ORIGIN"/>
+		<item value="346" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
