@@ -104,7 +104,7 @@ objects:
             initialDelaySeconds: 30
             periodSeconds: 10
             successThreshold: 1
-            timeoutSeconds: 5            
+            timeoutSeconds: 5
           readinessProbe:
             failureThreshold: 10
             httpGet:
@@ -901,6 +901,120 @@ objects:
       deploymentconfig: rating-mongodb
     sessionAffinity: None
     type: ClusterIP
+#- apiVersion: v1
+#  kind: DeploymentConfig
+#  metadata:
+#    labels:
+#      app: rating
+#      comp-type: database
+#    name: rating-mongodb
+#  spec:
+#    replicas: 0
+#    selector:
+#      deploymentconfig: rating-mongodb
+#    strategy:
+#      recreateParams:
+#        post:
+#          execNewPod:
+#            command:
+#            command:
+#              - /bin/sh
+#              - -i
+#              - -c
+#              - env && while ! mongo ${RATING_MONGODB_SERVICE_HOST}:27017/$MONGODB_DATABASE -u $MONGODB_USER -p $MONGODB_PASSWORD --eval="$MONGODB_INIT" > /dev/null 2>&1; do echo "warte auf mongo ..."; sleep 5; done
+#            containerName: rating-mongodb
+#            env:
+#            - name: MONGODB_INIT
+#              value: db.ratings.insert({"_id":"329299","itemId":"329299","rating":5.0,"count":1});
+#                db.ratings.insert({"_id":"329199","itemId":"329199","rating":1.0,"count":12});
+#                db.ratings.insert({"_id":"165613","itemId":"165613","rating":2.3,"count":31});
+#                db.ratings.insert({"_id":"165614","itemId":"165614","rating":3.0,"count":51});
+#                db.ratings.insert({"_id":"165954","itemId":"165954","rating":4.0,"count":66});
+#                db.ratings.insert({"_id":"444434","itemId":"444434","rating":5.0,"count":76});
+#                db.ratings.insert({"_id":"444435","itemId":"444435","rating":4.0,"count":83});
+#                db.ratings.insert({"_id":"444436","itemId":"444436","rating":3.0,"count":123});
+#          failurePolicy: ignore
+#        timeoutSeconds: 600
+#      resources: {}
+#      type: Recreate
+#    template:
+#      metadata:
+#        labels:
+#          app: rating
+#          comp-type: database
+#          deploymentconfig: rating-mongodb
+#      spec:
+#        containers:
+#        - env:
+#          - name: KUBERNETES_NAMESPACE
+#            valueFrom:
+#              fieldRef:
+#                fieldPath: metadata.namespace
+#          - name: MONGODB_USER
+#            value: ${RATING_DB_USERNAME}
+#          - name: MONGODB_PASSWORD
+#            value: ${RATING_DB_PASSWORD}
+#          - name: MONGODB_DATABASE
+#            value: ratingdb
+#          - name: MONGODB_ADMIN_PASSWORD
+#            value: ${RATING_DB_PASSWORD}
+#          image: mongodb
+#          imagePullPolicy: IfNotPresent
+#          livenessProbe:
+#            failureThreshold: 10
+#            initialDelaySeconds: 30
+#            periodSeconds: 10
+#            successThreshold: 1
+#            tcpSocket:
+#              port: 27017
+#            timeoutSeconds: 1
+#          name: rating-mongodb
+#          ports:
+#          - containerPort: 27017
+#            protocol: TCP
+#          readinessProbe:
+#            exec:
+#              command:
+#              - /bin/sh
+#              - -i
+#              - -c
+#              - mongo 127.0.0.1:27017/$MONGODB_DATABASE -u $MONGODB_USER -p $MONGODB_PASSWORD
+#                --eval="quit()"
+#            failureThreshold: 10
+#            initialDelaySeconds: 3
+#            periodSeconds: 10
+#            successThreshold: 1
+#            timeoutSeconds: 1
+#          resources:
+#            limits:
+#              memory: 512Mi
+#          securityContext:
+#            capabilities: {}
+#            privileged: false
+#          terminationMessagePath: /dev/termination-log
+#          volumeMounts:
+#          - mountPath: /var/lib/mongodb/data
+#            name: mongodb-data
+#        dnsPolicy: ClusterFirst
+#        restartPolicy: Always
+#        securityContext: {}
+#        terminationGracePeriodSeconds: 30
+#        volumes:
+#        - emptyDir: {}
+#          name: mongodb-data
+#    test: false
+#    triggers:
+#    - imageChangeParams:
+#        automatic: true
+#        containerNames:
+#        - rating-mongodb
+#        from:
+#          kind: ImageStreamTag
+#          name: mongodb:3.2
+#          namespace: ${IMAGE_STREAM_NAMESPACE}
+#      type: ImageChange
+#    - type: ConfigChange
+
 - apiVersion: v1
   kind: DeploymentConfig
   metadata:
@@ -909,30 +1023,11 @@ objects:
       comp-type: database
     name: rating-mongodb
   spec:
-    replicas: 0
+    replicas: 1
     selector:
       deploymentconfig: rating-mongodb
     strategy:
       recreateParams:
-        post:
-          execNewPod:
-            command:
-              - /bin/sh
-              - -i
-              - -c
-              - env && while ! mongo ${RATING_MONGODB_SERVICE_HOST}:27017/$MONGODB_DATABASE -u $MONGODB_USER -p $MONGODB_PASSWORD --eval="$MONGODB_INIT" > /dev/null 2>&1; do echo "waiting for mongo ..."; sleep 5; done
-            containerName: rating-mongodb
-            env:
-            - name: MONGODB_INIT
-              value: db.ratings.insert({"_id":"329299","itemId":"329299","rating":5.0,"count":1});
-                db.ratings.insert({"_id":"329199","itemId":"329199","rating":1.0,"count":12});
-                db.ratings.insert({"_id":"165613","itemId":"165613","rating":2.3,"count":31});
-                db.ratings.insert({"_id":"165614","itemId":"165614","rating":3.0,"count":51});
-                db.ratings.insert({"_id":"165954","itemId":"165954","rating":4.0,"count":66});
-                db.ratings.insert({"_id":"444434","itemId":"444434","rating":5.0,"count":76});
-                db.ratings.insert({"_id":"444435","itemId":"444435","rating":4.0,"count":83});
-                db.ratings.insert({"_id":"444436","itemId":"444436","rating":3.0,"count":123});
-          failurePolicy: ignore
         timeoutSeconds: 600
       resources: {}
       type: Recreate
@@ -1013,7 +1108,7 @@ objects:
           namespace: ${IMAGE_STREAM_NAMESPACE}
       type: ImageChange
     - type: ConfigChange
-
+# Ende Deploymentcnfig ohne POST
 - apiVersion: v1
   kind: ConfigMap
   metadata:
